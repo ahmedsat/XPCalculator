@@ -7,7 +7,7 @@ function CalculateRequiredXP(level) {
 }
 
 function CalculateLevelByXP(XP) {
-  return Math.round(W.W(b * XP * Math.log(a)) / Math.log(a));
+  return Math.floor(W.W(b * XP * Math.log(a)) / Math.log(a));
 }
 
 module.exports = { CalculateRequiredXP, CalculateLevelByXP };
